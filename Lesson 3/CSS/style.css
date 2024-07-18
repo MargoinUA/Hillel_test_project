@@ -1,0 +1,104 @@
+* {
+    border: none;
+    font: inherit;
+}
+.center {
+    margin: 0 auto;
+    width: 50%;
+    border: 3px;
+    padding: 10px;
+    Line height: 16px;
+}
+
+.username {
+    background-color: white;
+    ;
+    color: #EAEAEA;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    border: 1px solid;
+    width: 300px;
+    height: 16px;
+    Line height: 16px;
+}
+
+.email {
+    background: white;
+    color: #EAEAEA;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    border: 1px solid;
+    width: 300px;
+    height: 16px;
+    Line height: 16px;
+}
+
+.password {
+    background: white;
+    color: #EAEAEA;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    border: 1px solid;
+    width: 300px;
+    height: 16px;
+    Line height: 16px;
+}
+
+.cnfrmpass {
+    background: white;
+    color: #EAEAEA;
+    padding: 12px 14px;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    border: 1px solid;
+    width: 300px;
+    height: 16px;
+    Line height: 16px;
+}
+
+.registerbutton {
+    background-color: #46A358;
+    color: white;
+    padding: 12px 14px;
+    margin-bottom: 41px;
+    border-radius: 5px;
+    border: none;
+    width: 330px;
+    height: 45px;
+    Size: 16px;
+    Line height: 16px;
+}
+
+.RegisterTop {
+    background-color: white;
+    padding: center;
+    color: #46A358;
+    font-family: "Cera Pro";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    width: 157px;
+    height: 16px;
+    Size: 20px;
+    Line height: 16px;
+}
+
+.LoginTop {
+    background-color: white;
+    padding: center;
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 20px;
+    font-weight: 500;
+    width: 52px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+
+
+}
