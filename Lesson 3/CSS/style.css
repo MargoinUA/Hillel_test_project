@@ -1,7 +1,14 @@
-* {
+<! -- * {
     border: none;
     font: inherit;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    color: inherit;
+    
+} -->
+
 .center {
     margin: 0 auto;
     width: 50%;
@@ -50,7 +57,6 @@
 .cnfrmpass {
     background: white;
     color: #EAEAEA;
-    padding: 12px 14px;
     padding: 12px 14px;
     margin-bottom: 16px;
     border-radius: 5px;
@@ -101,4 +107,20 @@
     text-align: center;
 
 
+}
+.google, .facebook {
+    border-radius: 5px;
+    background: transparent;
+    color: #727272;
+    margin-bottom: 15px;
+    padding: 10px; 20px;
+    line-height: 16px;
+    text-align: center;
+    font-size: 13px;
+    border: 1px; solid; #EAEAEA;
+    max-width: 300px;
+
+}
+img {
+    vertical-align: bottom;
 }
