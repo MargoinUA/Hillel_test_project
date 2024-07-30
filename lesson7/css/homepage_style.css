@@ -9,6 +9,7 @@
 body {
     margin: 0 auto;
     max-width: 1200px;
+    font-family: "Cera Pro";
 }
  .wrapper {
      max-width: 1200px;
@@ -51,10 +52,12 @@ body {
     border-radius: 6px;
     width: 100px;
     padding: 8px 16px;
+    font-family: "Cera Pro";
     img {
       margin-top: -2px;
       margin-right: 4px;
     }
+
  }
 
  .last img {
@@ -103,6 +106,8 @@ body {
 
  .colortext {
      color: #46A358;
+     font-family: "Cera Pro";
+     font-weight: 900;
  }
 
  .text {
@@ -131,6 +136,7 @@ body {
      border-radius: 5px;
      width: 140px;
      line height: 20px;
-     font-weight: bold;
+     font-weight:bold;
+     font-family: "Cera Pro";
 
  }
