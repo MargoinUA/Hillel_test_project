@@ -10,39 +10,33 @@ body {
     margin: 0 auto;
     max-width: 1200px;
     font-family: "Cera Pro";
+    font-weight:normal;
 }
- .wrapper {
-     max-width: 1200px;
-     height: 100vh;
-     padding-bottom: 18px;
-     border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
- }
 
  .header {
      color: #46A358;
-     font-family: "Cera Pro";
      font-weight: 400;
      
  }
 
  .bar {
      display: inline-block;
-     font-family: "Cera Pro";
-     font-weight: 400;
  }
 
  .first {
      width: 20%;
      margin: 10px;
      
+     
  }
-
  .middle {
-     margin-right: 300px;
- }
+    margin-right: 300px;
+}
 
  a {
      margin: 10px;
+     font-family: "Cera Pro";
+     font-weight: 400;
  }
 
  .last {
@@ -56,6 +50,7 @@ body {
     img {
       margin-top: -2px;
       margin-right: 4px;
+      
     }
 
  }
@@ -73,10 +68,17 @@ body {
      margin-top: auto;
      padding: 0%;
      vertical-align: 44px;
-     font-family: "Cera Pro";
  }
 
- h5 {
+ .text {
+    display: inline-block;
+    max-width: 500px;
+    vertical-align: top;
+    margin-top: 68px;
+    font-family: "Cera Pro";
+}
+
+h5 {
      background-color: transparent;
      color: #3D3D3D;
      margin-bottom: 7px;
@@ -110,14 +112,6 @@ body {
      font-weight: 900;
  }
 
- .text {
-     display: inline-block;
-     max-width: 500px;
-     vertical-align: top;
-     margin-top: 68px;
-     font-family: "Cera Pro";
-     font-weight: 900;
- }
 
  .bodyimg {
      display: inline-block;
@@ -136,7 +130,7 @@ body {
      border-radius: 5px;
      width: 140px;
      line height: 20px;
-     font-weight:bold;
      font-family: "Cera Pro";
+     font-weight: 500;
 
  }

@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    gap: 20px;
+    margin-top: 37px;
+    flex-wrap: wrap;
+    background-color: #FBFBFB;
+    padding-right: 30px;
+}
+
+.left-side, .right-side {
+    text-align: right;
+    margin-right: 28px;
+    font-family: "Cera Pro";
+}
+
+.item {
+    img {
+        margin-right: 20px;
+        background-color: #FBFBFB;
+    }
+    }
+
+}
+
+.container h3 {
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-weight: 900;
+    line-height: 24px;
+    width: 150px;
+    font-style: oblique;
+}
+
+p {
+    width: 292px;
+    line-height: 24px;
+    font-family: "Cera Pro";
+    font-weight: 400;
+    color: #727272;
+}
+
+.btn {
+    border-radius: 6px;
+    background-color: #46A358;
+    color: #FFFFFF;
+    padding: 11px 28px;
+    margin-top: 25px;
+    font-family: "Cera Pro";
+
+    img {
+        margin-left: 2px;
+        vertical-align: middle;
+    }
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    background-color: #FBFBFB;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 52px;
+    align-items:baseline;
+    text-align:left;
+}
+
+h5 {
+    color: #46A358;
+    line-height: 16px;
+    font-family: "Cera Pro";
+    font-weight: 500;
+}
+
+.container1 h3 {
+    color: #3D3D3D;
+    line-height: 26px;
+    font-family: "Cera Pro";
+    font-weight: 700;
+
+}
+
+.container1 p {
+    color: #727272;
+    line-height: 14px;
+    font-family: "Cera Pro";
+    font-weight: 400;
+}
+
+.header2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+    height: 100px;
+}
+
+.header2 h2 {
+    color: #3D3D3D;
+    line-height: 16px;
+    margin-top: 138px;
+    margin-bottom:15px;
+    font-family: "Cera Pro";
+    font-weight: 700;
+    text-wrap: wrap;
+
+}
+
+.header2 p {
+    color: #727272;
+    line-height: 24px;
+    text-wrap: nowrap;
+    font-family: "Cera Pro";
+    font-weight: 400;
+    margin-bottom: 35px;
+}
