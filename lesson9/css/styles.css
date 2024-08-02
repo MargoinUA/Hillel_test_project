@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: "Cera Pro";
+    font-weight:normal;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 40px;
+    line-height: 16px;
+}
+
+.top {
+    display: flex;
+    gap: 20px;
+}
+
+.top a {text-decoration: none;
+    color: #3D3D3D;
+    font-size: 16px;
+}
+
+.top a:hover {
+    text-decoration: underline;
+    color: #46A358;
+    font-weight: bold;
+}
+
+.right-side {
+    
+        text-align: right;
+        margin-left: 390px;
+
+}
+.container {
+    display: flex;
+    justify-content:center;
+    gap: 33px;
+    position: relative;
+    width: 100%;
+   
+}
+
+.container:hover .overlay {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 70%;
+    align-items: end;
+    background: url(../images/Frame_bottom.svg);
+}
+
