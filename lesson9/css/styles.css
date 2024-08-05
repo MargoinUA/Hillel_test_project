@@ -4,63 +4,89 @@
     border: none;
     outline: none;
     box-sizing: border-box;
+    align-content: center;
 
 }
 
 body {
     margin: 0 auto;
-    max-width: 1200px;
+    padding: 0;
+    max-width: 900px;
     font-family: "Cera Pro";
-    font-weight:normal;
+    font-weight: normal;
+    align-items: center;
+    vertical-align: middle;
 }
 
-header {
+.top ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content:center;
     text-align: center;
-    padding: 10px;
+    padding: 10px 10px;
     margin-bottom: 40px;
     line-height: 16px;
+    list-style: none;
+    
+
 }
 
-.top {
+a {
+    text-decoration: none;
+}
+
+.top li {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    margin-right: 38px;
+    
 }
 
-.top a {text-decoration: none;
-    color: #3D3D3D;
-    font-size: 16px;
+.top .lastchild {
+    margin-left: auto;
 }
 
 .top a:hover {
-    text-decoration: underline;
-    color: #46A358;
-    font-weight: bold;
+   color: #46A358;
+   text-decoration: underline;
 }
 
-.right-side {
-    
-        text-align: right;
-        margin-left: 390px;
-
-}
 .container {
-    display: flex;
-    justify-content:center;
-    gap: 33px;
     position: relative;
-    width: 100%;
-   
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 34px;
+    margin:auto;
+}
+
+
+
+.overlay {
+    position: absolute;
+    transition: .3s ease;
+    background-color: transparent;
+    top: 260px;
+    opacity: 0;
+    width: 125px;
+    height: 40px;
 }
 
 .container:hover .overlay {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 70%;
-    align-items: end;
-    background: url(../images/Frame_bottom.svg);
+    opacity: 1;
 }
 
+.overlay2 {
+    position: absolute;
+    transition: .3s ease;
+    background-color: transparent;
+    opacity: 0;
+    left: 612px;
+    width: 80px;
+    top: 0;
+}
+
+.container:hover .overlay2 {
+    opacity: 1;
+}

@@ -18,8 +18,10 @@
 }
 
 .left-side, .right-side {
+    max-width: fit-content;
     font-family: "Cera Pro";
     text-align: right;
+    padding: 36px 30px;
 
     
 }
@@ -60,13 +62,13 @@ p {
 .container1 {
     display: flex;
     flex-direction: row;
-    background-color: #FBFBFB;
-    justify-content:center;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 52px;
     align-items:baseline;
-    text-align:left;
+    text-align: left;
     gap: 44px;
+
 }
 
 h5 {
@@ -75,6 +77,7 @@ h5 {
     font-family: "Cera Pro";
     font-weight: 700;
     margin: 4px 9px;
+    padding-top: 9px;
 }
 
 .container1 h3 {
@@ -102,6 +105,7 @@ h5 {
     img {
         vertical-align: middle;
         color: #3D3D3D;
+        
         }
     }
     a:hover {
@@ -111,12 +115,12 @@ h5 {
 
 
 .header2 {
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:center;
     text-align: center;
-    text-wrap: nowrap;
     gap: 15px;
 }
 
@@ -134,5 +138,21 @@ h5 {
     line-height: 24px;
     font-family: "Cera Pro";
     font-weight: 400;
-    margin-left: -200px;
+    max-width: max-content;
+}
+
+.readmore {
+    padding-bottom: 12px;
+    margin-top: 10px;
+}
+
+.backcolor {
+    background-color: #FBFBFB;
+    padding: 9px 11px;
+
+}
+
+.flower {
+    width: 100%;
+    display: block;
 }
