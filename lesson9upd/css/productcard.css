@@ -21,8 +21,8 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
     padding: 10px;
+    margin: 0 auto;
 }
 
 nav ul {
@@ -30,6 +30,7 @@ nav ul {
     display: flex;
     margin: 10px;
     padding: 0;
+    margin-left: 120px;
     
 }
 
@@ -60,6 +61,7 @@ nav ul li a:hover {
     gap: 37px;
     padding: 2rem;
     position: relative;
+    margin: 0 auto;
 }
 
 .product {
@@ -88,7 +90,8 @@ nav ul li a:hover {
     border-top: 2px solid #46A358;
 }
 
-.overlay {
+
+.product-grid .overlay {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -98,15 +101,17 @@ nav ul li a:hover {
     bottom: 0;
     top: 250px;
     transition: .3s ease;
-    opacity: 0;
     background-color: transparent;
+    opacity: 0;
     img {
         max-width: 20px;
         height: 20px;
+        background-color: transparent;
 
     }
 }
-.product-grid .overlay:hover {
+
+.overlay:hover {
     opacity: 1;
 }
 
@@ -114,7 +119,7 @@ nav ul li a:hover {
     position: absolute;
     display: flex;
     flex-direction: row;
-    right: 215px;
+    right: 240px;
     transition: .3s ease;
     background-color: transparent;
     opacity: 0;
