@@ -4,37 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Plant Shop</title>
     <link href="./css/fonts.css" rel="stylesheet">
-    <link href="./css/styles.css" rel="stylesheet">
+    <link href="./css/productcard.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>      
-        <div class="top">
-        <a class="hightlighted">All plants</a>
-        <a>New Arrivals</a>
-        <a>Sale</a>
-        <a class="right-side">Short by: Default sorting</a>
-    </div>
-</header>
-<main>
-    <div class="product-card">
-        <div class="product-image-container">
-            <img src="product-image.jpg" alt="Product Image" class="product-image">
-            <div class="hover-icons">
-                <button class="cart-icon">🛒</button>
-                <button class="wishlist-icon">❤️</button>
-                <button class="search-icon">🔍</button>
-            </div>
-            <div class="discount-badge">13% OFF</div>
+    <nav>
+        <ul>
+            <li><a href="#">All Plants</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Sale</a></li>
+        </ul>
+        <div class="sort">
+            <label for="sort">Short by: Default sorting </label>
+            <select id="sort">
+            </select>
         </div>
-        <div class="product-info">
-            <h3 class="product-title">Product Title</h3>
-            <p class="product-price">$199.00</p>
-            <p class="product-old-price">$229.00</p>
+    </nav>
+    <div class="product-grid">
+        <div class="product">
+            <img src="./images/plant1.svg" alt="Barberton Daisy">
+            <h2>Barberton Daisy</h2>
+            <p class="price">$119.00</p>
         </div>
+        <div class="product">
+            <img src="./images/plant2.svg" alt="Angel Wing Begonia">
+            <h2>Angel Wing Begonia</h2>
+            <p class="price">$169.00</p>
+        </div>
+        <div class="product">
+            <img src="./images/plant3.svg" alt="African Violet">
+            <h2>African Violet</h2>
+            <p class="price">$199.00</p>
+        </div>
+    <div class="overlay">
+        <button><img src="./images/shoppingbasket.svg"></button>
+        <button><img src="./images/heart.svg"></button>
+        <button><img src="./images/Frame.svg"></button>
     </div>
-</main>
+    <div class="overlay2">
+        <button><img src="./images/Frameperc.svg"></button>
+    </div>
+</div>
 </body>
 </html>

@@ -59,6 +59,7 @@ a {
     align-items: center;
     gap: 34px;
     margin:auto;
+    max-width: 900px;
 }
 
 
