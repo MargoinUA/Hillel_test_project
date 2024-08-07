@@ -11,7 +11,8 @@
 body {
     font-family: Cera Pro, sans-serif;
     align-content: center;
-    max-width: 900px;
+    max-width: 1000px;
+    margin: 0 auto;
 
 }
 
