@@ -7,6 +7,11 @@
 
   }
 
+  .menu list:hover .menu list:not(:last-child) {
+    display: block;
+
+  }
+
   body {
       margin: 0 auto;
       max-width: 1200px;
@@ -14,17 +19,18 @@
       font-weight: normal;
   }
 
-  .header {
+.header {
       color: #46A358;
       font-weight: 400;
 
   }
 
-  .list {
+.list {
       max-width: 190px;
       list-style: none;
       background-color: #EDF6EE;
       width: 100%;
+
 
       li {
           padding: 7px 14px 8px;
@@ -42,42 +48,42 @@
       }
   }
 
-
-  
   li:last-child::after {
-    content: '>';
-    position: absolute;
-    right: 18px;
+      content: '>';
+      position: absolute;
+      right: 18px;
 
   }
 
   li:hover:last-child:after {
-    content: '<';
-    position: absolute;
-    right: 18px;
-  } 
+      content: '<';
+      position: absolute;
+      right: 18px;
+  }
 
-  .list  a {
-    text-decoration: none;
-}
+  .list a {
+      text-decoration: none;
+  }
 
-li > .list {
-    display: none;
-    position: absolute;
-    left: 100%;
-    top:0;
-}
-li:hover > .list {
-    display: block;
+  li >.list {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: 0;
+  }
 
-}
+  li:hover>.list {
+      display: block;
 
-.li > .list > li:last-child:after {
-    content: '';
-}
+  }
 
-.menu li > .list {
-    display: none;
+  .li>.list>li:last-child:after {
+      content: '';
+  }
+
+  .menu:hover {
+      border-bottom: 2px solid green;
+      
   }
 
   .bar {
