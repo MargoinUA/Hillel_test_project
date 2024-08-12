@@ -18,7 +18,7 @@ footer {
   padding: 40px 20px;
   margin: 24px 30px;
   background-color: #f5f5f5;
-  border-bottom-color: 10px solid #46A358;
+  border-bottom: 2px solid #46A35833;
 }
 
 .footer-top {
