@@ -27,10 +27,10 @@ footer {
   margin-bottom: 40px;
 }
 
-.footer-service {
+.footer-service:not(:last-child){
   width: 22%;
   text-align: center;
-  border-left: 2px solid #46A3581A;
+  border-right: 2px solid #46A3581A;
 }
 
 .footer-service img {
