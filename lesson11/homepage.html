@@ -3,12 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greenshop Footer</title>
+    <title>Greenshop Store</title>
     <link href="./css/fonts.css" rel="stylesheet">
-    <link href="./css/styles.css" rel="stylesheet">
+    <link href="../lesson11/css/styles.css" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="logo">
+        <svg width="35" height="35"><use xlink:href="./sprite.svg#logo"></use>
+            </svg>  
+            <span>GREENSHOP</span>
+    
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Plant Care</a>
+                    <div class="dropdown-content">
+                        <a href="#">Drainage</a>
+                        <a href="#">Fungicides</a>
+                        <a href="#">Fertilizer</a>
+                        <div class="dropdown-submenu">
+                            <a href="#">Priming</a>
+                            <div class="dropdown-content">
+                                <a href="#">Universal</a>
+                                <a href="#">For Ficus</a>
+                                <a href="#">For Cacti</a>
+                                <a href="#">For Citrus</a>
+                                <a href="#">For those in bloom</a>
+                                <a href="#">For Orchids</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <button>Login</button>
+        </div>
+    </header>
+<section class="hero">
+        <h4>Welcome to Greenshop</h4>
+        <h1>LET'S MAKE A<br> BETTER <span>PLANET</span></h1>
+        <p>We are an online plant shop offering a wide range of cheap and trendy plants.<br> Use our plants to create a unique Urban Jungle. Order your favorite plants!</p>
+        <div class="picture"><img src="../lesson10new/images/flower.svg" alt="flower">
+        </div>
+        <button class="shop-now">SHOP NOW</button>
+    </section>
+
+    <nav class="nav2">
+        <ul class="ul2">
+            <li class="li2"><a href="#">All Plants</a></li>
+            <li class="li2"><a href="#">New Arrivals</a></li>
+            <li class="li2"><a href="#">Sale</a></li>
+        </ul>
+        <div class="sort">
+            <label for="sort">Short by: Default sorting </label>
+            <select id="sort">
+            </select>
+        </div>
+    </nav>
+    <div class="product-grid">
+        <div class="product">
+            <img src="../lesson9upd/images/plant1.svg" alt="Barberton Daisy">
+            <h2>Barberton Daisy</h2>
+            <p class="price">$119.00</p>
+        </div>
+        <div class="product">
+            <img src="../lesson9upd/images/plant2.svg" alt="Angel Wing Begonia">
+            <h2>Angel Wing Begonia</h2>
+            <p class="price">$169.00</p>
+        </div>
+        <div class="product">
+            <img src="../lesson9upd/images/plant3.svg" alt="African Violet">
+            <h2>African Violet</h2>
+            <p class="price">$199.00</p>
+        </div>
+    <div class="overlay">
+        <button><svg width="20" height="20"><use xlink:href="./sprite.svg#heart"></use>
+            </svg>
+        </button>
+        <button><img src="../lesson9upd/images/Frame.svg"></button>
+        <button><img src="../lesson9upd/images/shoppingbasket.svg"></button>
+    </div>
+    <div class="overlay2">
+        <button><img src="../lesson9upd/images/Frameperc.svg"></button>
+    </div>
+</div>
+
     <footer>
+
         <div class="footer-top">
             <div class="footer-service">
                 <img src="./images/pineapple.svg" alt="Garden Care">
@@ -41,13 +128,13 @@
                     <img src="./images/logo.svg" alt="Greenshop Logo" class="footer-logo">
                 </div>
                 <div class="footer-item">
-                    <p><i class="fa fa-map-marker"></i><img src="./images/location.svg"> 70 West Buckingham Ave.<br>Farmingdale, NY 11735</p>
+                    <p><i class="fa fa-map-marker"></i><svg width="20" height="20"><use xlink:href="./sprite.svg#location"></use></svg> 70 West Buckingham Ave.<br>Farmingdale, NY 11735</p>
                 </div>
                 <div class="footer-item">
-                    <p><i class="fa fa-envelope"></i><img src="./images/emailbox.svg"> contact@greenshop.com</p>
+                    <p><i class="fa fa-envelope"></i><svg width="20" height="20"><use xlink:href="./sprite.svg#emailbox"></use></svg> contact@greenshop.com</p>
                 </div>
                 <div class="footer-item">
-                    <p><i class="fa fa-phone"></i><img src="./images/phone.svg"> +88 01911 717 490</p>
+                    <p><i class="fa fa-phone"></i><svg width="20" height="20"><use xlink:href="./sprite.svg#phone"></use></svg> +88 01911 717 490</p>
                 </div>
             </div>
         </div>
@@ -85,11 +172,21 @@
             <div class="footer-social">
                 <h3>Social Media</h3>
                 <div class="social-icons">
-                    <a href="#"><img src="./images/Facebook.svg" alt="Facebook"></a>
-                    <a href="#"><img src="./images/Instagram.svg" alt="Instagram"></a>
-                    <a href="#"><img src="./images/Twitter.svg" alt="Twitter"></a>
-                    <a href="#"><img src="./images/Linkidin.svg" alt="LinkedIn"></a>
-                    <a href="#"><img src="./images/Youtube.svg" alt="YouTube"></a>
+                    <a href="https://www.facebook.com/">
+                        <svg width="30" height="30"><use xlink:href="./sprite.svg#facebook"></use>
+                      </svg></a>
+                      <a href="https://www.instagram.com/">
+                        <svg width="30" height="30"><use xlink:href="./sprite.svg#instagram"></use>
+                      </svg></a>
+                      <a href="https://x.com/?lang=en">
+                        <svg width="30" height="30"><use xlink:href="./sprite.svg#twitter"></use>
+                      </svg></a>
+                      <a href="https://linkedin.com/">
+                        <svg width="30" height="30"><use xlink:href="./sprite.svg#linkedin"></use>
+                      </svg></a>
+                      <a href="https://www.youtube.com">
+                        <svg width="30" height="30"><use xlink:href="./sprite.svg#youtube"></use>
+                      </svg></a>
                 </div>
                 <h3>We accept</h3>
                 <div class="payment-icons">
