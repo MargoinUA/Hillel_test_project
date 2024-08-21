@@ -105,6 +105,9 @@ nav ul li a {
   padding-left: 30px;
 }
 
+.search-bar {
+  
+}
 .search-bar svg 
 {
   margin-right: 30px;
@@ -113,6 +116,7 @@ nav ul li a {
   transition: 0.3s;
 
   }
+  
 }
 
 .blackbasket svg 
@@ -132,6 +136,9 @@ nav ul li a {
   cursor: pointer;
   border-radius: 5px;
   margin-left: auto;
+  &:hover {
+    animation: bouncing 0.5s cubic-bezier(.1,.25,.1,1) 0s infinite alternate both;
+  }
 }
 
 
@@ -177,15 +184,7 @@ nav ul li a {
   100%{ bottom: 50px; box-shadow: 0 50px 50px rgba(0,0,0,0.1);}
 }
 
-@keyframes width {
-  0% {
-    width=0;
-  }
-  100% {
-    width: 100%;
-  }
-  
-}
+
 
 .shop-now {
   background-color: #4CAF50;
@@ -198,7 +197,10 @@ nav ul li a {
   border-radius: 5px;
   max-height: 140px;
   line-height: 20px;
-  animation: bouncing 0.5s cubic-bezier(.1,.25,.1,1) 0s 20s alternate both;
+  
+  &:hover {
+  animation: bouncing 0.5s cubic-bezier(.1,.25,.1,1) 0s infinite alternate both;
+}
 }
 
 
@@ -639,8 +641,21 @@ svg {
 }
 &:hover {
   stroke: white;
+  animation: bounce 1s infinite;
+  position: relative;
+  bottom: -15px;
 }
 }
+
+@keyframe bounce {
+  0 {
+    bottom: 0;
+  }
+  100% {
+    bottom: -15px;
+  }
+}
+
 
 .container1 {
   display: flex;
@@ -702,14 +717,32 @@ svg {
   justify-content:center;
   text-align: center;
   gap: 15px;
+
 }
+
 
 .header2 h2 {
   color: #3D3D3D;
   line-height: 24px;
   margin-top: 138px;
   font-weight: 700;
+  &:hover {
+  animation-duration: .5s;
+  animation-name: slidein;
+  }
 
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .header2 p {
