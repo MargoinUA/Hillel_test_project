@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
     <title>Greenshop Store</title>
     <link href="./css/fonts.css" rel="stylesheet">
     <link href="../lesson11/css/styles.css" rel="stylesheet">
 </head>
 <body>
     <header>
+        <div class="preloader">
+            <div class="preloader1"></div>
+        </div>
         <div class="logo">
         <svg width="35" height="35"><use xlink:href="./sprite.svg#logo"></use>
             </svg>  
@@ -59,8 +63,23 @@
         <h4>Welcome to Greenshop</h4>
         <h1>LET'S MAKE A<br> BETTER <span>PLANET</span></h1>
         <p>We are an online plant shop offering a wide range of cheap and trendy plants.<br> Use our plants to create a unique Urban Jungle. Order your favorite plants!</p>
-        <div class="picture"><img src="../lesson10new/images/flower.svg" alt="flower">
-        </div>
+        <div>
+    <!--</00><img
+            alt="img"
+            sizes="70vmin"
+            src="../lesson10new/images/flower_2000w.png"
+            srcset="../lesson10new/images/flower_320w.jpg 320w,
+            ../lesson10new/images/flower_600w.jpg 600w,
+            ../lesson10new/images/flower_1200w.jpg 1200w,
+            ../lesson10new/images/flower_2000w.jpg 2000w"
+    />-->
+
+    <picture>
+        <source media="(max-width: 400px)" srcset="../lesson10new/images/flower_600w.jpg">
+        <source media="(min-width: 800px)" srcset="../lesson10new/images/flower_1200w.jpg">
+        <img alt="flower" src="../lesson10new/images/flower_2000w.png">
+    </picture>
+</div>
         <button class="shop-now">SHOP NOW</button>
     </section>
 

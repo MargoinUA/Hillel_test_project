@@ -1,0 +1,27 @@
+@media screen and (min-width: 600px) {
+   body {
+      width: 35%;
+      display: block;
+    }
+  }
+  @media(max-width: 992px){
+    body {
+        width: 60%;
+      }
+    }
+    @media(max-width: 768px){
+        body {
+            width: 50%;
+            display: block;
+          }
+    }
+    
+    @media(max-width: 500px){
+        body {
+            width: 30%;
+            display: block;
+          }
+          .hero {
+            display: inline;
+          }
+    }

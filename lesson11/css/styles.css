@@ -12,33 +12,6 @@ body {
   padding: 0;
   max-width: 100%;
 
-  .preloader::after { 
-    position: absolute;
-    top: 0;
-    bottom: 4%;
-    right: 0;
-    left: 0;
-    content: " ";
-    display: block;
-    margin: auto;
-    height: 32px;
-    width: 32px;
-    box-sizing: border-box;
-    border-style: solid;
-    border-width: 4px;
-    border-radius: 50%;
-    border-color: #46A358;
-    animation: rotating 1.1s linear infinite;
-}
-}
-
-@keyframes rotating {
-  from {
-    transform:rotate(0deg);
-  }
-  to {
-    transform:rotate(360deg);
-  }
 }
 
 header {
@@ -153,11 +126,16 @@ nav ul li a {
 
 }
 
-.picture img {
+picture img {
   position: absolute;
   left: 700px;
   bottom: 0;
+  max-width: 70vmin;
+  max-height: 70vmin;
+  display: flex;
 }
+
+
 .hero h1 {
   font-size: 48px;
   margin-bottom: 6px;
@@ -259,7 +237,7 @@ footer {
 
 .footer-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 40px;
 }
 
@@ -344,7 +322,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
   margin: 27px 155px 27px 23px;
 
 }
@@ -607,7 +584,6 @@ footer {
 }
 
 .left-side, .right-side {
-  max-width: 100%;
   text-align: right;
   padding: 36px 30px;
 
@@ -618,7 +594,7 @@ footer {
   color: #3D3D3D;
   font-weight: 900;
   line-height: 24px;
-  font-style: normal;
+  font-style: bold;
 }
 
 .container p {
@@ -663,7 +639,6 @@ svg {
   margin-top: 52px;
   text-align: left;
   gap: 44px;
-  max-width: 100%;
   margin-left: 30px;
   margin-right: 26px;
 
@@ -711,7 +686,6 @@ svg {
 
 
 .header2 {
-  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -870,3 +844,273 @@ svg {
   .checkbox-wrapper-14 *:after {
     box-sizing: inherit;
   }
+
+  .preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeOut 2s forwards;
+  }
+  
+  .preloader .preloader1 {
+    border: 4px solid #e7eef1;
+    border-top: 4px solid #11f109;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    animation: spin 0.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    99% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+      display: none;
+    }
+  
+  }
+
+
+  @media screen and (max-width: 1024px){
+    .hero {
+      font-size: 20px;
+      display: inline;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      position: relative;
+
+    }
+
+    .hero img {
+      width: 200px;
+      position: absolute;
+    }
+
+    .product-grid
+
+    {
+      display: block;
+    }
+
+
+      .product .checkbox-wrapper-14{
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        font-size: 16px;
+      }
+
+      .product img {
+        width: 200px;
+      }
+
+      nav2 ul2 li2 {
+        display: flex;
+        text-align: center;
+
+      } 
+      .sort {
+        text-align: end;
+} 
+.container {
+  display:flex;
+}
+
+.left-side .right-side {
+  text-align:left;
+  align-items: flex-start;
+  padding:0;
+  margin:0 auto;
+}
+.item img {
+  width: 200px;
+  height: 140px;
+}
+
+
+.header2 {
+  font-size: 14px;
+  text-align: center;
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  text-align: left;
+}
+.container1 img {
+  width: 200px;
+}
+
+.newsletter {
+  display: inline;
+  justify-content: flex-start;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer-service img {
+  width: 60px;
+
+}
+
+.footer-content {
+  display: inline-block;
+  justify-content: center;
+  padding: 6px 12px;
+}
+
+.footer-links {
+  display: inline-block;
+  justify-content:left;
+  text-align:left;
+}
+
+.footer-social {
+  display: block;
+  justify-content: end;
+}
+
+}
+
+@media screen and (max-width: 992px) {
+  .hero {
+    font-size: 20px;
+    display: inline;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+
+  }
+
+  .hero img {
+    width: 200px;
+    position: absolute;
+  }
+
+  .product-grid
+
+  {
+    display: block;
+  }
+
+
+    .product .checkbox-wrapper-14{
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .product img {
+      width: 200px;
+    }
+
+    nav2 ul2 li2 {
+      display: flex;
+      text-align: center;
+
+    } 
+    .sort {
+      text-align: end;
+} 
+.container {
+display:flex;
+}
+
+.left-side .right-side {
+text-align:left;
+align-items: flex-start;
+padding:0;
+margin:0 auto;
+}
+.item img {
+width: 200px;
+height: 140px;
+}
+
+
+.header2 {
+font-size: 14px;
+text-align: center;
+}
+.container1 {
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 15px;
+text-align: left;
+}
+.container1 img {
+width: 200px;
+}
+
+.newsletter {
+display: inline;
+justify-content: flex-start;
+}
+
+.footer-top {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.footer-service img {
+width: 60px;
+
+}
+
+.footer-content {
+display: inline-block;
+justify-content: center;
+padding: 6px 12px;
+}
+
+.footer-links {
+display: inline-block;
+justify-content:left;
+text-align:left;
+}
+
+.footer-social {
+display: block;
+justify-content: end;
+}
+
+}
