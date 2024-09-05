@@ -1,0 +1,13 @@
+:root {
+  --red: red;
+}
+
+body {
+  font-size: 16px;
+  background-color: green;
+}
+body .main {
+  padding: 0 16;
+  background-color: var(--main-bg-color);
+  background-color: green;
+}/*# sourceMappingURL=style.css.map */

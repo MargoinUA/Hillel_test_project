@@ -1,0 +1,22 @@
+{
+    "name": "HILLEL_TEST_PROJECT",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+        "scripts": {
+    "start": "gulp"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.77.6"
+  }
+}
